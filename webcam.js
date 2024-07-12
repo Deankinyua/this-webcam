@@ -28,3 +28,7 @@ deleter.addEventListener("click", () => {
   action.classList.remove("initial");
   //   context.drawImage(video, 0, 0, 640, 480);
 });
+
+navigator.mediaDevices.enumerateDevices().then((devices) => {
+  console.log(devices);
+});
